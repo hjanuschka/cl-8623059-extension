@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Sample Target",
+  "version": "1.0",
+  "description": "Declares content scripts so the inspector has something to show.",
+  "content_scripts": [
+    {
+      "matches": ["https://example.com/*"],
+      "exclude_matches": ["https://example.com/private/*"],
+      "js": ["example.js"],
+      "css": ["example.css"]
+    },
+    {
+      "matches": ["https://a.test/*", "https://b.test/*"],
+      "js": ["shared.js"]
+    }
+  ]
+}

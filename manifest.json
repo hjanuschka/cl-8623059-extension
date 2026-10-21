@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Content Script Inspector",
+  "version": "1.0",
+  "description": "Lists the content scripts every installed extension declares, using chrome.management.",
+  "permissions": ["management"],
+  "action": {
+    "default_popup": "panel.html",
+    "default_title": "Content Script Inspector"
+  }
+}
